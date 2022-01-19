@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOS UI Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./test.html"> -->
+</head>
+<body>
+    
+
+        <div class="calc">
+            <h1 class="display"></h1>
+            <div class="keypad">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="key" onclick="clearAll()">
+                                AC
+                            </div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="clearLast()">
+                              C
+                            </div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="showInDisplay('%')">
+                                %
+                            </div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="showInDisplay('/')">
+                                &#xf7
+                            </div>
+                        </td>
+                    </tr> 
+                    
+                    <tr>
+                        <td>
+                            <div class="key" onclick="showInDisplay(7)">
+                                7
+                            </div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="showInDisplay(8)" onclick="showInDisplay(8)">
+                                8
+                            </div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="showInDisplay(9)">
+                                9
+                            </div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="showInDisplay('*')">
+                                &#xd7
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="key" onclick="showInDisplay(4)">
+                                4
+                            </div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="showInDisplay(5)">
+                                5
+                            </div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="showInDisplay(6)">
+                                6
+                            </div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="showInDisplay('-')">
+                                &#x2212
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="key" onclick="showInDisplay(1)">
+                                1
+                            </div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="showInDisplay(2)">
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="showInDisplay(3)">
+                                3
+                            </div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="showInDisplay('+')">
+                                &#x2b
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <div class="key zero" onclick="showInDisplay(0)" >
+                                0
+                            </div>
+                        </td>
+                      
+                        <td>
+                            <div class="key" onclick="showInDisplay('.')">
+                                .
+                            </div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="calc()">
+                                &#61
+                            </div>
+                        </td>
+                    </tr>
+                  
+                </table>
+            </div>
+        </div>
+
+<script src="./js/app.js"></script>
+
+</body>
+</html>

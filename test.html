@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+        .key{
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="calc">
+            <h1 class="display-box"></h1>
+            <div class="keypad">
+            </div>
+        </div>
+
+
+<script>
+
+   
+
+    for(let i=0;i<10;i++){
+
+      keypad.innerHTML += `<button class="key" onclick='showInDisplay(${i})'>${i}</button>`;
+
+    }
+
+        operators.forEach(x =>  {
+
+            if(x === "="){
+
+                keypad.innerHTML += `<button class="key" onclick='calc()'>${x}</button>`
+
+            }else{
+
+                keypad.innerHTML += `<button class="key" onclick='showInDisplay("${x}")'>${x}</button>`
+
+            }
+
+        } )
+
+
+       
+
+    
+         
+        
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #000000;
+}
+
+
+
+.calc{
+    width: 420px;
+    margin: 100px auto;
+}
+
+.display{
+
+    color: #ffffff;
+    font-size: 60px;
+    text-align: right;
+    padding: 10px;
+    height: 120px;
+ 
+ }
+
+.key{
+    background-color: #333333;
+    color: #ffffffff;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor:pointer;
+    user-select: none;
+}
+
+.key:active{
+
+    background-color: #33333390;
+
+}
+
+.zero{
+    width: 190px;
+    border-radius: 90px;
+
+}
+
+tr:first-child td .key{
+
+            background-color: #a5a5a5;
+            color: #000000;
+}
+
+tr:first-child td .key:active{
+
+    background-color: #a5a5a590;
+    color: #000000;
+}
+
+tr td:last-child .key{
+    background-color: orange;
+    color: #ffffff;
+}
+
+
+tr td:last-child .key:active{
+    background-color: rgb(189, 140, 51);
+    color: #ffffff;
+}
